@@ -19,7 +19,8 @@ except (ImportError, ModuleNotFoundError):
 logger.setLevel("ERROR")
 warnings.filterwarnings("ignore")
 
-model_path = "fnlp/moss-moon-003-sft"
+# model_path = "fnlp/moss-moon-003-sft"
+model_path = "fnlp/moss-moon-003-sft-int4"
 if not os.path.exists(model_path):
     model_path = snapshot_download(model_path)
 
